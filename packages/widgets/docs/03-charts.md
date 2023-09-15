@@ -182,6 +182,14 @@ You may place a maximum height on the chart to ensure that it doesn't get too bi
 protected static ?string $maxHeight = '300px';
 ```
 
+## Making the widget collapsible
+
+You may make the widget collapsible using the `$collapsible` property:
+
+```php
+protected static bool $collapsible = true;
+```
+
 ## Setting chart configuration options
 
 You may specify an `$options` variable on the chart class to control the many configuration options that the Chart.js library provides. For instance, you could turn off the [legend](https://www.chartjs.org/docs/latest/configuration/legend.html) for `LineChartWidget` class:

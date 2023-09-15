@@ -3,7 +3,7 @@
     $heading = $this->getHeading();
     $description = $this->getDescription();
     $filters = $this->getFilters();
-    $isCollapsible = $this->$isCollapsible();
+    $isCollapsible = $this->isCollapsible();
 @endphp
 
 <x-filament-widgets::widget>
