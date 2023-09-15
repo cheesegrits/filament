@@ -3,12 +3,14 @@
     $heading = $this->getHeading();
     $description = $this->getDescription();
     $filters = $this->getFilters();
+    $isCollapsible = $this->$isCollapsible();
 @endphp
 
 <x-filament-widgets::widget>
     <x-filament::section
         :description="$description"
         :heading="$heading"
+        :collapsible="$isCollapsible"
         class="fi-wi-chart"
     >
         @if ($filters)
